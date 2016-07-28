@@ -1,0 +1,476 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Amoeba free one page responsive bootstrap site template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load staticfiles %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'app/content/isotope.css' %}" media="screen" />	
+	<link rel="stylesheet" href="{% static 'app/content/jquery.fancybox.css' %}" type="text/css" media="screen" />
+	<link rel="stylesheet" href="{% static 'app/content/bootstrap.css' %}">
+	<link rel="stylesheet" href="{% static 'app/content/bootstrap-theme.css' %}">
+    <link rel="stylesheet" href="{% static 'app/content/style.css' %}">
+	<!-- skin -->
+	<link rel="stylesheet" href="{% static 'app/content/default.css' %}">
+
+    <style>
+		body{
+		    height: 100%;
+		    margin: 0;
+		    overflow: hidden;
+		    padding: 0;
+		    width: 100%;
+	    }
+	    
+	    .viewlist{
+	    	margin: 0;
+	    }
+    </style>
+	<link rel="stylesheet" href="/gb/networks/themes/css/all.min.css?version=20130804beta" type="text/css" media="screen" />
+	<script type='text/javascript' src="http://libs.baidu.com/jquery/1.7.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/gb/networks/themes/js/jquery-1.7.1.min.js?version=20130804beta"><\/script>')</script>
+	<script src="/gb/networks/themes/js/jresize.min.js?version=20130804beta"></script>
+	<script>
+        var global_contextPath = '/gb';
+        //function to fix height of iframe!
+        var calcHeight = function() {
+        var headerDimensions = $('#header-bar').outerHeight();
+        $('#preview-frame').height($(window).height() - headerDimensions);
+        }
+        $(window).load(function() {
+        calcHeight();
+        $('#header-bar a.close').mouseover(function() {
+            $('#header-bar a.close').addClass('activated');
+        }).mouseout(function() {
+            $('#header-bar a.close').removeClass('activated');
+        });
+        });
+
+        $(window).resize(function() {
+        calcHeight();
+        }).load(function() {
+        calcHeight();
+        });
+    </script>
+	
+    <script>
+        $(function() {
+	        $.jResize({
+			        viewPortSizes   : ['320px', '480px', '540px', '600px', '768px', '960px', '1024px', '1280px', '1920px'], // ViewPort Widths
+			        backgroundColor : 'F8F8F8', // HEX Code
+			        fontColor       : '777777', // HEX Code
+			        postid: '3195'
+	        });
+        });
+	</script>
+
+
+</head>
+
+<body>
+		<section id="header" class="appear"></section>
+		<div class="navbar navbar-fixed-top" role="navigation" data-0="line-height:100px; height:100px; background-color:rgba(0,0,0,0.3);" data-300="line-height:60px; height:60px; background-color:rgba(0,0,0,1);">
+			 <div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="fa fa-bars color-white"></span>
+					</button>
+					<h1><a class="navbar-brand" href="" data-0="line-height:90px;" data-300="line-height:50px;">			金杜公益
+					</a></h1>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav" data-0="margin-top:20px;" data-300="margin-top:5px;">
+						<li class="active"><a href="">主页</a></li>
+						<li><a href="#section-about">志愿者</a></li>
+						<li><a href="#section-works">项目与活动</a></li>
+						<li><a href="#section-contact">加入我们</a></li>
+					</ul>
+				</div><!--/.navbar-collapse -->
+			</div>
+		</div>
+
+		<section class="featured">
+			<div class="container"> 
+				<div class="row mar-bot40">
+					<div class="col-md-6 col-md-offset-3">
+						
+						<div class="align-center">
+							<i class="fa fa-flask fa-5x mar-bot20"></i>
+							<h2 class="slogan">欢迎到访金杜公益</h2>
+							<p>
+
+				
+							</p>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- services -->
+		<section id="section-services" class="section pad-bot30 bg-white">
+		<div class="container"> 
+		
+			<div class="row mar-bot40">
+				<div class="col-lg-4" >
+					<div class="align-center">
+						<i class="fa fa-code fa-5x mar-bot20"></i>
+						<h4 class="text-bold">志愿者</h4>
+						<p>改变世界，我们一起开始
+						</p>
+					</div>
+				</div>
+					
+				<div class="col-lg-4" >
+					<div class="align-center">
+						<i class="fa fa-terminal fa-5x mar-bot20"></i>
+						<h4 class="text-bold">项目与活动</h4>
+						<p>改变世界，从这里开始
+						</p>
+					</div>
+				</div>
+			
+				<div class="col-lg-4" >
+					<div class="align-center">
+						<i class="fa fa-bolt fa-5x mar-bot20"></i>
+						<h4 class="text-bold">加入我们</h4>
+						<p>改变世界，从你开始
+						</p>
+					</div>
+				</div>
+			
+			</div>	
+
+		</div>
+		</section>
+			
+		<!-- spacer section:testimonial -->
+		<section id="testimonials" class="section" data-stellar-background-ratio="0.5">
+		<div class="container">
+			<div class="row">				
+					<div class="col-lg-12">
+							<div class="align-center">
+										<div class="testimonial pad-top40 pad-bot40 clearfix">
+											<blockquote class="bigquote color-white">金杜林</blockquote>
+											<br/>
+											<p class="color-white">金杜课堂周边环境改善</p>
+										</div>
+
+								</div>
+							</div>
+			</div>
+				
+		</div>	
+		</section>
+			
+		<!-- about -->
+		<section id="section-about" class="section appear clearfix">
+		<div class="container">
+
+				<div class="row mar-bot40">
+					<div class="col-md-offset-3 col-md-6">
+						<div class="section-header">
+							<h2 class="section-heading animated" data-animation="bounceInUp">志愿者</h2>
+							<p>寻找最美志愿者</p>
+						</div>
+					</div>
+				</div>
+
+					<div class="row align-center mar-bot40">
+						<div class="col-md-3">
+							<div class="team-member">
+								<figure class="member-photo"><img src="{% static 'app/images/zhaoxiaohong.jpg' %}" alt="" /></figure>
+								<div class="team-detail">
+									<h4>赵晓红</h4>
+									<span>上海办公室 公司证券二组</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="team-member">
+								<figure class="member-photo"><img src="{% static 'app/images/xiechen.jpg' %}" alt="" /></figure>
+								<div class="team-detail">
+									<h4>谢忱</h4>
+									<span>北京办公室 业务宣传与出版</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="team-member">
+								<figure class="member-photo"><img src="{% static 'app/images/gaolu.jpg' %}" alt="" /></figure>
+								<div class="team-detail">
+								<h4>高璐</h4>
+									<span>北京办公室 人力资源部</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="team-member">
+								<figure class="member-photo"><img src="{% static 'app/images/wanglong.jpg' %}" alt="" /></figure>
+								<div class="team-detail">
+								<h4>王龙</h4>
+									<span>北京办公室 信息系统管理部</span>
+								</div>
+							</div>
+						</div>
+					</div>
+						
+		</div>
+		</section>
+		<!-- /about -->
+		
+		<!-- spacer section:stats -->
+		<section id="parallax1" class="section pad-top40 pad-bot40" data-stellar-background-ratio="0.5">
+			<div class="container">
+            <div class="align-center pad-top40 pad-bot40">
+                <blockquote class="bigquote color-white">金杜课堂</blockquote>
+				<p class="color-white">改善教育均衡</p>
+            </div>
+			</div>	
+		</section>
+		
+		<!-- section works -->
+		<section id="section-works" class="section appear clearfix">
+			<div class="container">
+				
+				<div class="row mar-bot40">
+					<div class="col-md-offset-3 col-md-6">
+						<div class="section-header">
+							<h2 class="section-heading animated" data-animation="bounceInUp">项目与活动</h2>
+							<p></p>
+						</div>
+					</div>
+				</div>
+					
+                        <div class="row">
+                          <nav id="filter" class="col-md-12 text-center">
+                            <ul>
+                              <li><a href="#" class="current btn-theme btn-small" data-filter="*">全部</a></li>
+                              <li><a href="#"  class="btn-theme btn-small" data-filter=".webdesign" >项目</a></li>
+                              <li><a href="#"  class="btn-theme btn-small" data-filter=".photography">活动</a></li>
+                              <li ><a href="#" class="btn-theme btn-small" data-filter=".print">其他</a></li>
+                            </ul>
+                          </nav>
+                          <div class="col-md-12">
+                            <div class="row">
+                              <div class="portfolio-items isotopeWrapper clearfix" id="3">
+							  
+                                <article class="col-md-4 isotopeItem webdesign">
+									<div class="portfolio-item">
+										<img src="{% static 'app/images/Project-img1.jpg' %}" alt="" />
+										 <div class="portfolio-desc align-center">
+											<div class="folio-info">
+												<h5><a href="#">项目活动介绍</a></h5>
+												<a href="{% static 'app/images/Project-img1.jpg' %}" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
+											 </div>										   
+										 </div>
+									</div>
+                                </article>
+
+                                <article class="col-md-4 isotopeItem photography">
+									<div class="portfolio-item">
+										<img src="{% static 'app/images/Project-img2.jpg' %}" alt="" />
+										 <div class="portfolio-desc align-center">
+											<div class="folio-info">
+												<h5><a href="#">项目活动介绍</a></h5>
+												<a href="{% static 'app/images/Project-img2.jpg' %}" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
+											 </div>										   
+										 </div>
+									</div>
+                                </article>
+								
+
+                                <article class="col-md-4 isotopeItem photography">
+									<div class="portfolio-item">
+										<img src="{% static 'app/images/Project-img3.jpg' %}" alt="" />
+										 <div class="portfolio-desc align-center">
+											<div class="folio-info">
+												<h5><a href="#">项目活动介绍</a></h5>
+												<a href="{% static 'app/images/Project-img3.jpg' %}" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
+											 </div>										   
+										 </div>
+									</div>
+                                </article>
+
+                                <article class="col-md-4 isotopeItem print">
+									<div class="portfolio-item">
+										<img src="{% static 'app/images/Project-img4.jpg' %}" alt="" />
+										 <div class="portfolio-desc align-center">
+											<div class="folio-info">
+												<h5><a href="#">项目活动介绍</a></h5>
+												<a href="{% static 'app/images/Project-img4.jpg' %}" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
+											 </div>										   
+										 </div>
+									</div>
+                                </article>
+
+                                <article class="col-md-4 isotopeItem photography">
+									<div class="portfolio-item">
+										<img src="{% static 'app/images/Project-img5.jpg' %}" alt="" />
+										 <div class="portfolio-desc align-center">
+											<div class="folio-info">
+												<h5><a href="#">项目活动介绍</a></h5>
+												<a href="{% static 'app/images/Project-img5.jpg' %}" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
+											 </div>										   
+										 </div>
+									</div>
+                                </article>
+
+                                <article class="col-md-4 isotopeItem webdesign">
+									<div class="portfolio-item">
+										<img src="{% static 'app/images/Project-img6.jpg' %}" alt="" />
+										 <div class="portfolio-desc align-center">
+											<div class="folio-info">
+												<h5><a href="#">项目活动介绍</a></h5>
+												<a href="img/portfolio/img6.jpg" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
+											 </div>										   
+										 </div>
+									</div>
+                                </article>
+
+                                <article class="col-md-4 isotopeItem print">
+									<div class="portfolio-item">
+										<img src="{% static 'app/images/Project-img7.jpg' %}" alt="" />
+										 <div class="portfolio-desc align-center">
+											<div class="folio-info">
+												<h5><a href="#">项目活动介绍</a></h5>
+												<a href="{% static 'app/images/Project-img7.jpg' %}"><i class="fa fa-plus fa-2x"></i></a>
+											 </div>										   
+										 </div>
+									</div>
+                                </article>
+
+                                <article class="col-md-4 isotopeItem photography">
+									<div class="portfolio-item">
+										<img src="{% static 'app/images/Project-img8.jpg' %}" alt="" />
+										 <div class="portfolio-desc align-center">
+											<div class="folio-info">
+												<h5><a href="#">项目活动介绍</a></h5>
+												<a href="{% static 'app/images/Project-img8.jpg' %}"><i class="fa fa-plus fa-2x"></i></a>
+											 </div>										   
+										 </div>
+									</div>
+                                </article>
+
+                                <article class="col-md-4 isotopeItem print">
+									<div class="portfolio-item">
+										<img src="{% static 'app/images/Project-img9.jpg' %}" alt="" />
+										 <div class="portfolio-desc align-center">
+											<div class="folio-info">
+												<h5><a href="#">项目活动介绍</a></h5>
+												<a href="{% static 'app/images/Project-img9.jpg' %}" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
+											 </div>										   
+										 </div>
+									</div>
+                                </article>
+                                </div>
+                                        
+							</div>
+                                     
+
+							</div>
+                        </div>
+				
+			</div>
+		</section>
+		<section id="parallax2" class="section parallax" data-stellar-background-ratio="0.5">	
+            <div class="align-center pad-top40 pad-bot40">
+                <blockquote class="bigquote color-white">智光特殊教育学校</blockquote>
+				<p class="color-white">让障碍不在</p>
+            </div>
+		</section>
+
+		<!-- contact -->
+		<section id="section-contact" class="section appear clearfix">
+			<div class="container">
+				
+				<div class="row mar-bot40">
+					<div class="col-md-offset-3 col-md-6">
+						<div class="section-header">
+							<h2 class="section-heading animated" data-animation="bounceInUp">加入我们</h2>
+							<p>寻找最美志愿者</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<div class="cform" id="contact-form">
+							<div id="sendmessage">
+								 Your message has been sent. Thank you!
+							</div>
+							<form action="contact/contact.php" method="post" role="form" class="contactForm">
+							  <div class="form-group">
+								<label for="name">您的姓名</label>
+								<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="maxlen:4" data-msg="Please enter at least 4 chars" />
+								<div class="validation"></div>
+							  </div>
+							  <div class="form-group">
+								<label for="email">您的电子邮件</label>
+								<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+								<div class="validation"></div>
+							  </div>
+							  <div class="form-group">
+								<label for="message">技能</label>
+								<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
+								<div class="validation"></div>
+							  </div>
+							  
+							  <button type="submit" class="btn btn-theme pull-left">加入</button>
+							</form>
+
+						</div>
+					</div>
+					<!-- ./span12 -->
+				</div>
+				
+			</div>
+		</section>
+		<!-- map -->
+		<section id="section-map" class="clearfix">
+			<div id="map"></div>
+		</section>
+		
+	<section id="footer" class="section footer">
+		<div class="container">
+			<div class="row animated opacity mar-bot20" data-andown="fadeIn" data-animation="animation">
+				<div class="col-sm-12 align-center">
+                    <ul class="social-network social-circle">
+                        <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>				
+				</div>
+			</div>
+
+			<div class="row align-center copyright">
+					<div class="col-sm-12"><p>Copyright &copy; </p></div>
+			</div>
+		</div>
+
+	</section>
+	<a href="#header" class="scrollup"><i class="fa fa-chevron-up"></i></a>	
+
+	<script src="{% static 'app/scripts/modernizr-2.6.2-respond-1.1.0.min.js' %}"></script>
+	<script src="{% static 'app/scripts/jquery.js' %}"></script>
+	<script src="{% static 'app/scripts/jquery.easing.1.3.js' %}"></script>
+    <script src="{% static 'app/scripts/bootstrap.min.js' %}"></script>
+	<script src="{% static 'app/scripts/jquery.isotope.min.js' %}"></script>
+	<script src="{% static 'app/scripts/jquery.nicescroll.min.js' %}"></script>
+	<script src="{% static 'app/scripts/jquery.fancybox.pack.js' %}"></script>
+	<script src="{% static 'app/scripts/skrollr.min.js' %}"></script>		
+	<script src="{% static 'app/scripts/jquery.scrollTo-1.4.3.1-min.js' %}"></script>
+	<script src="{% static 'app/scripts/jquery.localscroll-1.2.7-min.js' %}"></script>
+	<script src="{% static 'app/scripts/stellar.js' %}"></script>
+	<script src="{% static 'app/scripts/jquery.appear.js' %}"></script>
+	<script src="{% static 'app/scripts/validate.js' %}"></script>
+    <script src="{% static 'app/scripts/main.js' %}"></script>
+</body>
+</html>
